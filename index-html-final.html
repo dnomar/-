@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SEO Competition Analysis Tool</title>
+      <link rel="stylesheet" href="styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+      <header>
+        <h1><i class="fas fa-search"></i> SEO Competition Analysis Tool</h1>
+      </header>
+      <main>
+        <div class="input-group">
+          <label for="yourUrl">Enter Your Website URL:</label>
+          <input type="text" id="yourUrl" placeholder="https://yourwebsite.com or type 'new'">
+        </div>
+        <div class="input-group">
+          <label for="googleSheetId">Google Sheet ID:</label>
+          <input type="text" id="googleSheetId" placeholder="Enter Google Sheet ID">
+        </div>
+        <div class="competitors">
+          <h3><i class="fas fa-users"></i> Add Competitor URLs:</h3>
+          <div id="competitorInputs">
+            <input type="text" class="competitorUrl" placeholder="https://competitor1.com">
+            <input type="text" class="competitorUrl" placeholder="https://competitor2.com">
+            <input type="text" class="competitorUrl" placeholder="https://competitor3.com">
+          </div>
+          <button id="addCompetitor"><i class="fas fa-plus-circle"></i> Add More Competitors</button>
+        </div>
+        <button id="runAnalysis"><i class="fas fa-cog"></i> Run Analysis</button>
+        <button id="pushToSheets"><i class="fas fa-cloud-upload-alt"></i> Push Data to Google Sheets</button>
+        <div id="resultsArea">
+          <!-- Results will be displayed here -->
+        </div>
+      </main>
+
+      <script src="script.js"></script>
+    </body>
+    </html>

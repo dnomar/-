@@ -1,0 +1,13 @@
+{
+  "name": "seo-tool",
+  "version": "1.0.0",
+  "description": "SEO Competition Analysis Tool",
+  "scripts": {
+    "start": "serve",
+    "build": "echo 'No build required'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^14.0.1"
+  }
+}
